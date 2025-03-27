@@ -98,8 +98,8 @@ class MainActivity : AppCompatActivity() {
                         val count = intent.clipData?.itemCount ?: 0
                         (0 until count).forEach {
                             val imageUri = intent.clipData?.getItemAt(it)?.uri
-                            imageUri?.let {
-                                selectedImages.add(it)
+                            imageUri?.let { uri ->
+                                selectedImages.add(uri)
                             }
 
                         }
