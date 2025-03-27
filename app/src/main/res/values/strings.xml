@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EcommerceAdminApp</string>
+    <string name="sizes_text">Sizes (Optional) separate by coumma</string>
+    <string name="colors_text">Colors</string>
+    <string name="images_text">Images</string>
+    <string name="product_details_text">Product Details</string>
+    <string name="Percentage_text">Offer Percentage (Optional)</string>
+    <string name="product_price_text">Product price</string>
+    <string name="product_description_text">Product description (Optional)</string>
+    <string name="product_category_text">product category</string>
+    <string name="product_name_text">product name</string>
+    <string name="product_general_text">Product General information</string>
+</resources>

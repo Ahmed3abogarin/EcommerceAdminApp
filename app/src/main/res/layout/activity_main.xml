@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDDDA1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/product_general_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/productNameET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/product_name_text"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/categoryET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/product_category_text"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/productNameET"
+        app:layout_constraintStart_toStartOf="@+id/productNameET"
+        app:layout_constraintTop_toBottomOf="@+id/productNameET" />
+
+    <EditText
+        android:id="@+id/descriptionET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/product_description_text"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/categoryET"
+        app:layout_constraintStart_toStartOf="@+id/categoryET"
+        app:layout_constraintTop_toBottomOf="@+id/categoryET" />
+
+    <EditText
+        android:id="@+id/priceET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/product_price_text"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionET"
+        app:layout_constraintStart_toStartOf="@+id/descriptionET"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionET" />
+
+    <EditText
+        android:id="@+id/offerPercentageET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/Percentage_text"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/priceET"
+        app:layout_constraintStart_toStartOf="@+id/priceET"
+        app:layout_constraintTop_toBottomOf="@+id/priceET" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/product_details_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/offerPercentageET"
+        app:layout_constraintTop_toBottomOf="@+id/offerPercentageET" />
+
+    <EditText
+        android:id="@+id/sizesET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/sizes_text"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/offerPercentageET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/colorsBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/my_button"
+        android:text="@string/colors_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagesBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imagesBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/my_button"
+        android:text="@string/images_text"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizesET" />
+
+    <TextView
+        android:id="@+id/colorsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/colorsBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/colorsBtn" />
+
+    <TextView
+        android:id="@+id/imagesCountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imagesBtn"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/imagesBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imagesBtn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FDDDA1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
